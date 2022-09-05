@@ -1,7 +1,9 @@
 <template>
-  <MainHeader/>
-  <MainContent/>
-  <MainFooter/>
+  <div>
+    <MainHeader/>
+    <MainContent/>
+    <MainFooter/>
+  </div>
 </template>
 
 <script>
@@ -20,5 +22,21 @@ export default {
 </script>
 
 <style lang="scss">
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  ul,ol,menu {
+    list-style: none;
+  }
+  img {
+    max-width: 100%;
+  }
 
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
 </style>
