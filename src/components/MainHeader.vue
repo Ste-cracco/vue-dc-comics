@@ -48,6 +48,8 @@
 
     .container {
         display: flex; 
+        max-width: 1200px;
+        margin: auto;
         
         .logo {
             padding: 20px
