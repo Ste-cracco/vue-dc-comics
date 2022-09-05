@@ -25,6 +25,8 @@
         .container {
             display: flex;
             align-content: center;
+            max-width: 1200px;
+            margin: auto;
         }
     }
 </style>

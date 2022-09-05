@@ -1,0 +1,33 @@
+
+.footer_top {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    background-color: #0282F9;
+    color: white;
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    max-width: 1200px;
+    margin: auto;   
+
+    .card {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 50px 0;
+        gap: 15px;
+
+        img {
+            width: 50px;
+        }
+
+        h4 {
+            text-transform: uppercase;
+            font-weight: 100;
+            font-size: 13px;
+        }
+    }
+}
