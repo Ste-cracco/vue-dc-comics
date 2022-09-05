@@ -20,7 +20,6 @@
         height: 150px;
         line-height: 150px;
 
-
         .container {
             max-width: 1200px;
             margin: auto;

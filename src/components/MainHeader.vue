@@ -1,40 +1,42 @@
 <template>
-   <header class="container">
-        <div class="logo">
-            <img src="../assets/img/dc-logo.png" alt="Logo">
+   <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/img/dc-logo.png" alt="Logo">
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="#">Characters</a>
+                </li>
+                <li>
+                    <a class="active" href="#">Comics</a>
+                </li>
+                <li>
+                    <a href="#">Movies</a>
+                </li>
+                <li>
+                    <a href="#">TV</a>
+                </li>
+                <li>
+                    <a href="#">Games</a>
+                </li>
+                <li>
+                    <a href="#">Collectibles</a>
+                </li>
+                <li>
+                    <a href="#">Videos</a>
+                </li>
+                <li>
+                    <a href="#">Fans</a>
+                </li>
+                <li>
+                    <a href="#">News</a>
+                </li>
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+            </ul>
         </div>
-        <ul class="menu">
-            <li>Characters
-                <a href="#"></a>
-            </li>
-            <li class="active">Comics
-                <a href="#"></a>
-            </li>
-            <li>Movies
-                <a href="#"></a>
-            </li>
-            <li>TV
-                <a href="#"></a>
-            </li>
-            <li>Games
-                <a href="#"></a>
-            </li>
-            <li>Collectibles
-                <a href="#"></a>
-            </li>
-            <li>Videos
-                <a href="#"></a>
-            </li>
-            <li>Fans
-                <a href="#"></a>
-            </li>
-            <li>News
-                <a href="#"></a>
-            </li>
-            <li>Shop
-                <a href="#"></a>
-            </li>
-        </ul>
 </header>
 </template>
 
@@ -59,9 +61,9 @@
             height: 85px;
         }
 
-        ul {
+        .menu {
             display: flex;
-            line-height: 125px;
+            align-items: center;
             text-transform: uppercase;
             margin-left: auto;
             gap: 25px;
@@ -72,11 +74,12 @@
             color: #464646;
             font-size: 14px;
 
-            &.active, &.hover {
+            a.active, a:hover {
                 border-bottom: 5px solid #0282F9;
-                color: #0282F9;;
-                
+                color: #0282F9;
+                padding-bottom: 52px;                
             }
         }
     }
+    
 </style>

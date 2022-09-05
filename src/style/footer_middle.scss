@@ -8,16 +8,6 @@
     margin: auto;
     position: relative;
 
-    .logo_footer {
-        position: absolute;
-        top: -60px;
-        right: 0px;
-
-        img {
-            width: 80%;
-        }
-    }
-
     .menu_footer {
         display: flex;
         gap: 65px;
@@ -29,19 +19,29 @@
             li {
                 color: gray;
                 font-size: 12px;
+
+                &.title {
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 18px;
+                    padding: 20px 0;
+                }
             }
 
             li:last-child {
                 padding-bottom: 30px;
             }
-        }
+        }        
+    }
 
-        .title {
-            color: white;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 18px;
-            padding: 20px 0;
+    .logo_footer {
+        position: absolute;
+        top: -60px;
+        right: 0px;
+
+        img {
+            width: 80%;
         }
     }
 }

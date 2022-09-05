@@ -34,6 +34,9 @@ export default {
   img {
     max-width: 100%;
   }
-
+  a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
   
 </style>
