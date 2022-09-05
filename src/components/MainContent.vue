@@ -14,17 +14,14 @@
 
 <style lang="scss" scoped>
     main {
-        display: flex;
-        align-items: center;
         background-color: black;
         color: white;
         font-weight: bold;
         height: 150px;
+        line-height: 150px;
 
 
         .container {
-            display: flex;
-            align-content: center;
             max-width: 1200px;
             margin: auto;
         }

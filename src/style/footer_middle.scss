@@ -1,0 +1,47 @@
+.footer_middle {
+    background-image: url('../assets/img/footer-bg.jpg');
+}
+
+.container_footer_middle {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+
+    .logo_footer {
+        position: absolute;
+        top: -60px;
+        right: 0px;
+
+        img {
+            width: 80%;
+        }
+    }
+
+    .menu_footer {
+        display: flex;
+        gap: 65px;
+
+        ul {            
+            padding: 20px 0;
+            gap: 65px;
+
+            li {
+                color: gray;
+                font-size: 12px;
+            }
+
+            li:last-child {
+                padding-bottom: 30px;
+            }
+        }
+
+        .title {
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 20px 0;
+        }
+    }
+}

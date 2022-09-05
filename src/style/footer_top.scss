@@ -7,11 +7,10 @@
     color: white;
 }
 
-.container {
+.container_footer_top {
     display: flex;
-    align-content: center;
-    max-width: 1200px;
-    margin: auto;   
+    margin: auto;  
+    gap: 50px; 
 
     .card {
         display: flex;
@@ -29,5 +28,9 @@
             font-weight: 100;
             font-size: 13px;
         }
+
+    .logo_footer {
+        width: 100%;
+    }
     }
 }
