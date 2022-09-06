@@ -3,10 +3,11 @@
 }
 
 .container_footer_middle {
+    position: relative;
+    overflow: hidden;
     display: flex;
     max-width: 1200px;
     margin: auto;
-    position: relative;
 
     .menu_footer {
         display: flex;
@@ -35,13 +36,13 @@
         }        
     }
 
-    .logo_footer {
-        position: absolute;
-        top: -60px;
-        right: 0px;
-
+    .logo_footer {      
+        
         img {
-            width: 80%;
+            position: absolute;
+            top: -130px;
+            right: 0px;
+            
         }
     }
 }
