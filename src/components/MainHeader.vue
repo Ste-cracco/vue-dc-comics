@@ -4,45 +4,65 @@
             <div class="logo">
                 <img src="../assets/img/dc-logo.png" alt="Logo">
             </div>
-            <ul class="menu">
-                <li>
-                    <a href="#">Characters</a>
-                </li>
-                <li>
-                    <a class="active" href="#">Comics</a>
-                </li>
-                <li>
-                    <a href="#">Movies</a>
-                </li>
-                <li>
-                    <a href="#">TV</a>
-                </li>
-                <li>
-                    <a href="#">Games</a>
-                </li>
-                <li>
-                    <a href="#">Collectibles</a>
-                </li>
-                <li>
-                    <a href="#">Videos</a>
-                </li>
-                <li>
-                    <a href="#">Fans</a>
-                </li>
-                <li>
-                    <a href="#">News</a>
-                </li>
-                <li>
-                    <a href="#">Shop</a>
-                </li>
-            </ul>
+            <MenuHeader :links="menu"/>
         </div>
 </header>
 </template>
 
 <script>
+import MenuHeader from './MenuHeader.vue'
+
     export default {
-        
+        components: {
+        MenuHeader,    
+        },
+        data() {
+            return {
+                menu: [
+                    {
+                        testo: 'Characters',
+                        href: '#'
+                    },
+                    {
+                        testo: 'Comics',
+                        href: '#'
+                    },
+                    {
+                        testo: 'Movies',
+                        href: '#'
+                    },
+                    {
+                        testo: 'TV',
+                        href: '#'
+                    },
+                    {
+                        testo: 'Games',
+                        href: '#'
+                    },
+                    {
+                        testo: 'Collectible',
+                        href: '#'
+                    },
+                    {
+                        testo: 'Videos',
+                        href: '#'
+                    },
+                    {
+                        testo: 'Fans',
+                        href: '#'
+                    },
+                    {
+                        testo: 'News',
+                        href: '#'
+                    },
+                    {
+                        testo: 'Shop',
+                        href: '#'
+                    },
+                ]
+            }
+        }
+
     }
 </script>
 
@@ -59,26 +79,6 @@
 
         img {
             height: 85px;
-        }
-
-        .menu {
-            display: flex;
-            align-items: center;
-            text-transform: uppercase;
-            margin-left: auto;
-            gap: 25px;
-        }
-
-        li {
-            font-weight: bold;
-            color: #464646;
-            font-size: 14px;
-
-            a.active, a:hover {
-                border-bottom: 5px solid #0282F9;
-                color: #0282F9;
-                padding-bottom: 52px;                
-            }
         }
     }
     

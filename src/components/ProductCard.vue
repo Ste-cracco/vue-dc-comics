@@ -5,15 +5,13 @@
     </article>
 </template>
 
-<script>
-    
+<script>    
     export default {
         props: {
             src: String,
             titolo: String,
         },       
     }
-
 </script>
 
 <style lang="scss" scoped>
