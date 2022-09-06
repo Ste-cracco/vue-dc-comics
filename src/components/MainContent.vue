@@ -4,15 +4,14 @@
 
         </div>
         <div class="container">
-            <ProductCard v-for="(comic, i) in comics" :key="i"/> 
+            <ProductCard v-for="(comic, i) in comics" :key="i" :titolo="comic.titolo" :src="comic.src" :alt="comic.titolo"/> 
         </div>
     </main>
 </template>
 
 <script>
     import ProductCard from './ProductCard.vue'
-    import comics from '../dc-comics.js'
-
+    import comics from '../dc-comics'
 
     export default {
         components: {
@@ -43,8 +42,11 @@
 
         .container {
             max-width: 1200px;
-            min-height: 400px;
             margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 20px;
+            padding: 30px;
         }
     }
 </style>
