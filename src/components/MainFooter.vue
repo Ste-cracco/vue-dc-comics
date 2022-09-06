@@ -27,44 +27,7 @@
 
             <div class="footer_middle">
                 <div class="container_footer_middle">
-                    <div class="menu_footer">
-                        <ul>
-                            <li class="title">DC Comics</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li class="title">Shop</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                        </ul>
-                        <ul>
-                            <li class="title">DC</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                        </ul>
-                        <ul>
-                            <li class="title">Sites</li>
-                            <li>Lorm Ipsum</li>
-                            <li>Lorm Ipsum</li>
-                            <li>Lorm Ipsum</li>
-                            <li>Lorm Ipsum</li>
-                            <li>Lorm Ipsum</li>
-                        </ul>
-
-                    </div>
+                    <MenuFooter :links="menu"/>
                     <div class="logo_footer">
                         <img src="../assets/img/dc-logo-bg.png" alt="Logo footer">
                     </div>
@@ -90,8 +53,71 @@
 </template>
 
 <script>
+import MenuFooter from './MenuFooter.vue'
+
     export default {
-        
+    components: { MenuFooter },
+        data() {
+            return {
+                menu: [
+                    {
+                        testo: 'DC Comics',
+                        href: '#',
+                        title: true
+                    },
+                    {
+                        testo: 'Lorem1',
+                        href: '#',
+                        title: false
+                    },
+                    {
+                        testo: 'Lorem2',
+                        href: '#',
+                        title: false
+                    },
+                    {
+                        testo: 'Lorem3',
+                        href: '#',
+                        title: false
+                    },
+                    {
+                        testo: 'Characters',
+                        href: '#',
+                        title: false
+                    },
+                    {
+                        testo: 'Characters',
+                        href: '#',
+                        title: false
+                    },
+                    {
+                        testo: 'Characters',
+                        href: '#',
+                        title: false
+                    },     
+                    {
+                        testo: 'Characters',
+                        href: '#',
+                        title: false
+                    },    
+                    {
+                        testo: 'Shop',
+                        href: '#',
+                        title: true
+                    },   
+                    {
+                        testo: 'Characters',
+                        href: '#',
+                        title: false
+                    },    
+                    {
+                        testo: 'Characters',
+                        href: '#',
+                        title: false
+                    },                    
+                ]
+            }
+        }
     }
 </script>
 

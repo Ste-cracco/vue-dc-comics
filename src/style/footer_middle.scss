@@ -17,9 +17,10 @@
             padding: 20px 0;
             gap: 65px;
 
-            li {
+            a {
                 color: gray;
                 font-size: 12px;
+                display: block;
 
                 &.title {
                     color: white;
@@ -30,8 +31,8 @@
                 }
             }
 
-            li:last-child {
-                padding-bottom: 30px;
+            a:last-child {
+                padding-bottom: 10px;
             }
         }        
     }
