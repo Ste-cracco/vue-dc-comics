@@ -1,9 +1,8 @@
 <template>
     <ul class="menu">
-        <li v-for="(link, index) in links" :key="index">
-            <a :href="link.href"> {{ link.testo }}</a>
-        </li>
-        
+        <li v-for="(link, index) in links" :key="index" >
+            <a :class="[link.current === true ? 'active' : '']" :href="link.href"> {{ link.testo }}</a>
+        </li>        
     </ul>
 </template>
 

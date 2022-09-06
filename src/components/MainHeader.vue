@@ -21,31 +21,38 @@ import MenuHeader from './MenuHeader.vue'
                 menu: [
                     {
                         testo: 'Characters',
-                        href: '#'
+                        href: '#',
+                        current: false
                     },
                     {
                         testo: 'Comics',
-                        href: '#'
+                        href: '#',
+                        current: true
                     },
                     {
                         testo: 'Movies',
-                        href: '#'
+                        href: '#',
+                        current: false
                     },
                     {
                         testo: 'TV',
-                        href: '#'
+                        href: '#',
+                        current: false
                     },
                     {
                         testo: 'Games',
-                        href: '#'
+                        href: '#',
+                        current: false
                     },
                     {
                         testo: 'Collectible',
-                        href: '#'
+                        href: '#',
+                        current: false
                     },
                     {
                         testo: 'Videos',
-                        href: '#'
+                        href: '#',
+                        current: false
                     },
                     {
                         testo: 'Fans',
@@ -53,11 +60,13 @@ import MenuHeader from './MenuHeader.vue'
                     },
                     {
                         testo: 'News',
-                        href: '#'
+                        href: '#',
+                        current: false
                     },
                     {
                         testo: 'Shop',
-                        href: '#'
+                        href: '#',
+                        current: false
                     },
                 ]
             }
